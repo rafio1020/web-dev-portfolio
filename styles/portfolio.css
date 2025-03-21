@@ -211,3 +211,76 @@ footer{
     border-radius: 5px;
     width: 100%;
 }
+
+/* Responsive Media Query */
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .btn-primary{
+        font-size: 13px;
+        padding: 10px 30px;
+        margin-bottom: 5px;
+    }
+    nav{
+        flex-direction: column;
+        margin: auto;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .banner-greetings{
+        font-weight: 600px;
+        font-size: 25px;
+    
+    }
+    .banner-title{
+        font-weight: bold;
+        font-size: 45px;
+    }
+    .banner{
+        margin: 30px;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .header{
+        background-image: none;
+    }
+    .about{
+        border-radius: 10px;
+        padding: 30px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .about-items{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .skills-section-description{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .skills-container{
+        flex-direction: column;
+    }
+    .resume-container{
+        margin: 20px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer{
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 10px;
+        gap: 10px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    .contact input[type="text"],input[type="email"],textarea{
+        width: calc(100% - 60px);
+    }
+}
